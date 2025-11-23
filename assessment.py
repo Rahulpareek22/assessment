@@ -37,7 +37,7 @@ class Appointment(Details):
         mobile_no = input("Enter your mobile number: ")
         
         if self.data.get('mobile_no') == mobile_no:
-            print("\n------ Appointment Status ------")
+            print("------ Appointment Status ------")
             print("Name:", self.data.get('name'))
             print("Age:", self.data.get('age'))
             print("Mobile No:", self.data.get('mobile_no'))
@@ -61,7 +61,7 @@ class Appointment(Details):
 obj = Appointment()
 
 while True:
-    print("\n1. Book Appointment")
+    print("1. Book Appointment")
     print("2. Check Appointment Status")
     print("3. Cancel Appointment")
     print("4. Exit")
@@ -325,3 +325,4 @@ while True:
         break
     else:
         print("Invalid choice !!!")
+
