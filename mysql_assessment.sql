@@ -17,6 +17,9 @@ INSERT INTO employees (name, position, salary, hire_date) VALUES (1,'John Doe',
 (2,'Jane Smith', 'Project Manager', 90000.00, '2021-05-22'),
 (3,'Alice Johnson', 'UX Designer', 75000.00, '2023-03-01');
 
+
+## create a Trigger that will insert a record into the employee_audit table every time a new employee is added to the employee’s table:
+
 DELIMITER $$
 
 CREATE TRIGGER after_employee_insert
@@ -28,6 +31,9 @@ BEGIN
 END $$
 
 DELIMITER ;
+
+## ## We have an employee’s table, and we want to create a stored procedure to add a new employee and automatically log this action in an employee_audit table.
+
 
 DELIMITER $$
 
